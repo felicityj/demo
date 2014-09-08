@@ -17,7 +17,7 @@ namespace Demo.Controllers {
             call.Say("Hello");
             call.Say(bets);
             call.Say("Connecting now");
-            ////call.Dial(new Client(callerName));
+            call.Dial(new Client(callerName));
             return new TwiMLResult(call.ToString());
         }
     }
